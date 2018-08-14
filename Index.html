@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="utf-8">
+     <title>portfolio/Arshad Hameed</title>
+
+     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+     <script
+    src="https://code.jquery.com/jquery-3.3.1.js"></script>
+ 
+  <style type="text/css">
+        *,
+        *::before,
+        *::after{
+
+         box-sizing: border-box;
+        }
+
+        *:focus{
+
+        outline: none;
+    }
+
+    body{
+        padding: 0;
+        margin: 0;
+        background: #000;
+        color: white;
+        font-family: "oxygen" , sans-serif;
+        overflow-y: hidden;
+     }
+
+     a{
+        text-decoration: none;
+     } 
+
+
+     img{
+         width: 100%;
+     }
+
+
+     .home img{
+         width: 100%;
+         -webkit-filter: grayscale(100%)
+         contrast(100%);
+         filter: grayscale(100%) contrast(200%) brightness(60%);
+}
+    .folio img{
+        filter: grayscale(100%);
+    }
+
+
+    aside{
+        position: fixed;
+        background: #222;
+        top: 0px;
+        left: 0px;
+        width: 120px;
+        height: 100%;
+        overflow: none;
+        z-index: 1;
+        text-align: center;
+        padding: 0%;
+    }
+
+
+        aside img{
+            filter: grayscale(100%) contrast(50%) brightness(100%);
+            margin-bottom: -3px;
+       
+        }
+
+        .material-icons.md-36{
+            font-size: 36px;
+
+        }
+
+        aside a{
+            display: block;
+            padding: 15px 0;
+            color: white;
+            transition: all 0.35s;
+            text-transform: uppercare;
+            font-size: 0.75em;
+            letter-spacing: 2px;
+        }
+
+        aside p{
+            margin: 0;
+            padding: 0;
+       }
+        
+        aside a:hover{
+            background: #000;
+
+        }
+
+        aside nav a:nth-child(2){
+            background: #000;
+        }
+        aside nav a:nth-child(2) :hover{
+            background: #b2b2b2;
+            color: #222;
+
+        }
+
+        main{
+            max-width: 980px;
+            background: #000;
+            margin-left: 20%;
+            padding: 12px 50px 12px 50px;
+        }
+
+        header{
+            text-align: center;
+            letter-spacing: 2px;
+
+        }
+
+        header h1{
+            font-weight: bold;
+            font-size: 4em;
+            letter-spacing: 4px;
+        }
+        
+        header h5{
+            font-weight: 300;
+            font-size: 1em;
+            letter-spacing: 4px;
+            color: #b2b2b2;
+        }
+
+            .about,
+            .folio, 
+            .contact{
+                line-height: 1.5em;
+                letter-spacing: 1px;
+                font-weight: 300;
+                
+            }
+
+            .about h2, 
+            .folio h2, 
+            .contact h2{
+                font-weight: 300;
+                text-transform: uppercase;
+                text-decoration: line-through;
+                padding-bottom: 10px;
+                margin: 100px 0 0 0;
+                letter-spacing: 4px;
+
+            }
+
+            .about p{
+                color: #b2b2b2;
+                
+            }
+
+            .about span{
+                font-weight: 600;
+                color: white;
+            }
+
+            .about h3{
+                font-weight: 300;
+                margin: 50px 0;
+            
+            }
+
+            .container{
+                width: 100%;
+                background-color: #b2b2b2;
+            }
+
+            .skills{
+                text-align: right;
+                padding-right: 20px;
+                line-height: 30px;
+                color: white;
+                background-color: #424242;
+
+            }
+            .figma{
+                width: 95%;
+            }
+            .html{
+
+                width: 90%;
+            }
+            .css{
+                width: 75%;
+            }
+            .java-script{
+                width: 25%;
+            }
+            .Jquery{
+                width: 0%;
+            }
+            
+            .portfolio h3{
+                color: white;
+                font-weight: 300;
+                letter-spacing: 2px;
+            }
+            .portfolio p{
+                font-size: 0.875em;
+
+            }
+            .row-halves{
+                display: -webit-box;
+                display: -ms-flexbox;
+                display: flex;
+                justify-content: space-between;
+                margin: 20px 0;
+                -webkit-flex-pack:justify;
+            }
+            .row-halves .col{
+                width: 49%;
+            }
+
+            .col{
+                border: 1px solid #222;
+                background: #222;
+                color: #b2b2b2;
+                padding: 10px;
+            }
+                label{
+                    color: #b2b2b2;
+                }
+            form input[type="text"],
+            select,
+            textarea{
+                width: 100%;
+                padding: 12px;
+                border: none;
+                border: 1px solid #222;
+                background: transparant;
+                margin-top: 6px;
+                margin-bottom: 16px;
+                resize: vertical;
+                color: #b2b2b2;
+
+            }
+
+            form input[type="text"]:focus,
+            textarea:focus{
+                outline: none;
+                border: 1px solid #009688;
+            }
+
+            input[type="submit"]{
+                background-color: transparent;
+                color: #b2b2b2;
+                text-transform: uppercase;
+                padding: 12px 20px;
+                border: 1px solid #222;
+                cursor: pointer;
+                transition: all 0.35s;
+            }
+
+            input[type="submit"]{
+                background-color: transparent;
+                color: #b2b2b2;
+                text-transform: uppercase;
+                padding: 12px 20px;
+                border: 1px solid #222;
+                cursor: pointer;
+                transition: all 0.35s;
+            }
+
+            input[type="submit"]:hover{
+                background-color: #b2b2b2;
+                color: #222;
+            }
+
+            .contact .container{
+                margin-top: 20px;
+                margin-bottom: 100px;
+                background: transparent;
+                padding: 20px 0;
+            }
+
+            .footer{
+                border-top: 1px solid #222;
+            }
+
+            .top-bar{
+                padding: 20px 0;
+                text-align: center;
+            
+            }
+            
+            .top-bar a{
+                margin: 10px;
+                font-size: 2em;
+                color: #b2b2b2;
+                transition: all 0,35s;
+            }
+
+            .top-bar a:hover{
+                transform: scale(1.1);
+                color: #009688;
+
+            }
+            .bottom-bar{
+                background: #000;
+                font-size: 0.75em;
+                text-align: center;
+            }
+
+            @media (max-width: 768px){
+                .row-halves{
+                    display: block;
+                }
+                .row-halves .col{
+                    width: 100%;
+                    margin: 0 0 10px 0;
+                }
+            }
+
+            @media (max-width: 601px){
+                aside{
+                    display: none;
+                }
+                main{
+                    width: 100%;
+                    margin: 0 auto;
+                    padding: 12px 25px;
+                
+                }
+
+                header{
+                    margin-top: 80px;
+
+                }
+                header hi{
+                    font-size: 3em;
+                    line-height: 1.4em;
+                }
+                header h5{
+                    font-size: 1em;
+                    letter-spacing: 2px;
+                }
+                .mobile-nav{
+                    position: fixed;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-around;
+                    background: rgba(0,0,0,0.8);
+                    z-index: 1;
+                }
+
+                .mobile-nav a{
+                    width: 100%;
+                    color: #b2b2b2;
+                    text-transform: uppercase;
+                    font-size: 0.875em;
+                    letter-spacing: 2px;
+                    text-align: center;
+                    padding: 10px 10px;
+                    transition: all 0.35s;
+                }
+                .mobile-nav a:hover{
+                    background: #b2b2b2;
+                    color: #222;
+                }
+            }
+            @media (min-width:600px){
+                .mobile-nav{
+                    display: none;
+                }
+            }
+             </style>
+</head>
+<body>
+        <aside>
+        <nav>
+                <img src="arshad1.jpg" alt="">
+                <a href="#home"><i class="material-icons md-
+                36">Home</i>
+                <p>Home</p>
+                </a>
+
+                <a href="#about"><i class="material-icons md-
+                36">person</i>
+                <p>About</p>
+                </a>
+
+                <a href="#portfolio"><i class="material-icons md-
+                36">Image</i>
+                <p>Portfolio</p>
+                </a>
+
+                <a href="#contact"><i class="material-icons md-
+                36">mail</i>
+                <p>Contact</p>
+                </a>
+          
+            </nav>
+ </aside>
+
+        <nav class="mobile-nav">
+
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+
+            <a href="#contact"><i class="material-icons md-36">mail</i><p>Contact</p></a>
+        </nav>
+
+        <main>
+            <header class="home" id="home"> <br><br> 
+                <h1>I'm Arshad Hameed</h1>
+                <h5>Designer // Developer // Photographer</h5>
+                <img src="arshad1.jpg" alt="">
+            
+            </header>
+
+        </main>
+        <section class="about" id="about">
+            <h2>About Me</h2>
+            <p>
+                <span>Hello, I'm Arshad </span> I,m Designer, Developer and Photographer, life long learner, and ready for new Opportunities. A bit about me, i love music, the art, teach and all the things creative 
+</p>
+
+<p> 
+    I believe in user centered design and delievring the best possible experiences to people. I have experience with HTML css, Bootstrap, Javascript, JQuerry, Git, Github, Managment, Logistics, Finance and Photoshop as well
+</p>
+
+<h3>My skills</h3>
+<p>Figma</p>
+<div class="container">
+    <div class="skills figma">95%</div>
+</div>
+
+<p>Html 5 </p>
+<div class="container">
+    <div class="skills html">90%</div>
+
+    <p>css 3</p>
+<div class="container">
+    <div class="skills css">75%</div>
+
+    <p>JavaScript</p>
+<div class="container">
+    <div class="skills js">25%</div>
+
+    <p>Jquery</p>
+<div class="container">
+    <div class="skills php">10%</div>
+  </section>
+
+  <section class="folio" id="folio">
+<h2>folio</h2>
+
+<div class="row-halves">
+<div class="col">
+    <img src="arshad1.jpg" alt="">
+    <h3>Business</h3>
+    <p>
+        Building responsive and thoughtful sites for small and large business.
+    </p>
+</div>
+
+<div class="col">
+        <img src="arshad1.jpg" alt="">
+        <h3>Mobile</h3>
+        <p>
+            Fully Responsive, mobile ready designs and implementation for all.        
+        </p>
+    </div>
+</div>
+
+<div class="row-halves">
+        <div class="col">
+            <img src="arshad1.jpg" alt="">
+            <h3>UX Design</h3>
+            <p>
+                Thoughtfull and intuitive user experinces. all of my design will be guaranted to wor your clients.
+            </p>
+        </div>
+        
+        <div class="col">
+                <img src="arshad1.jpg" alt="">
+                <h3>Personal</h3>
+                <p>
+                    I also design and build for personal projects. No idea is too small and everyone desrves a voice on web.        
+                </p>
+            </div>
+        </div>
+ </section>
+
+ <section class="contact" id="contact">
+        <h2>Contact</h2>
+        <div class="container">
+            <form action="">
+                <label for="name>Name"></label>
+                <input type="text" id="name" name="name">
+                <label for="email">E-mail</label>
+                <input type="text" id="email" name="email">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" style="height:200px"></textarea>
+                <input type="submit" value="message">
+  </form>
+        
+ </div>
+</section>
+
+<footer>
+    <section class="top-bar">
+        <a href=""><i class="fab fa-book-f"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+        <a href=""><i class="fab fa-github"></i></a>
+</section>
+
+        <section class="bottom-bar">
+
+            <p>&copy 2018  | All rights reserved</p>
+        </section>
+
+
+
+</footer>
+
+
+
+</body>
+
+</html>
